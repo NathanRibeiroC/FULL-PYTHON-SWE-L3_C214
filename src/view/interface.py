@@ -8,7 +8,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from src.service.ServiceGame import *
+from src.utils.csvUtils import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -24,8 +25,30 @@ class Ui_MainWindow(object):
         self.verticalLayout.addItem(spacerItem)
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(0)
+        self.tableWidget.setColumnCount(11)
         self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(8, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(9, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(10, item)
         self.verticalLayout.addWidget(self.tableWidget)
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.verticalLayout.addItem(spacerItem1)
@@ -72,6 +95,72 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        # table widget configuration
+        self.tableWidget.setHorizontalHeaderLabels(["rank","name","platform","year","genre","publisher","na_sales","eu_sales","jp_sales","other_sales","global_sales"])
+
+        # combo box PUBLISHER configuration
+        self.comboBox.addItem('None')
+        self.comboBox.addItem('Nintendo')
+        self.comboBox.addItem('Microsoft Game Studios')
+        self.comboBox.addItem('Take-Two Interactive')
+        self.comboBox.addItem('Activision')
+        self.comboBox.addItem('Sony Computer Entertainment')
+        self.comboBox.addItem('Electronic Arts')
+
+        # combo box PLATFORM configuration
+        self.comboBox_2.addItem('None')
+        self.comboBox_2.addItem('PS4')
+        self.comboBox_2.addItem('PC')
+        self.comboBox_2.addItem('XB')
+        self.comboBox_2.addItem('Wii')
+        self.comboBox_2.addItem('GB')
+        self.comboBox_2.addItem('GBA')
+        self.comboBox_2.addItem('X360')
+        self.comboBox_2.addItem('PS3')
+        self.comboBox_2.addItem('PS2')
+
+        # configuring pushButton
+        self.pushButton.clicked.connect(self.getListByComboSelect)
+
+        # parsed list from CSV file
+        self.parsedL = CsvOperations().csvConvert()
+
+    def getComboBoxText(self):
+        comboPublisher = str(self.comboBox.currentText())
+        comboPlatform = str(self.comboBox_2.currentText())
+        return comboPlatform, comboPublisher
+
+    def getListByComboSelect(self):
+        aux = []
+        Platform, Publisher = self.getComboBoxText()
+        if(Platform == 'None')and(Publisher!='None'):
+            aux = ServiceGame.getListByPublisher(self.parsedL, Publisher)
+        elif(Platform != 'None')and(Publisher=='None'):
+            aux = ServiceGame.getListByPlatform(self.parsedL, Platform)
+        elif(Platform != 'None')and(Publisher!='None'):
+            aux = ServiceGame.getListByPlatformAndPublisher(self.parsedL,Publisher,Platform)
+        else:
+            aux = []
+        self.showListOnTable(aux)
+
+    def showListOnTable(self,aux):
+        tablerow = 0
+        self.tableWidget.setRowCount(len(aux))
+        for row in aux:
+            self.tableWidget.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+            self.tableWidget.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(str(row[1])))
+            self.tableWidget.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(str(row[2])))
+            self.tableWidget.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(str(row[3])))
+            self.tableWidget.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
+            self.tableWidget.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
+            self.tableWidget.setItem(tablerow, 6, QtWidgets.QTableWidgetItem(str(row[6])))
+            self.tableWidget.setItem(tablerow, 7, QtWidgets.QTableWidgetItem(str(row[7])))
+            self.tableWidget.setItem(tablerow, 8, QtWidgets.QTableWidgetItem(str(row[8])))
+            self.tableWidget.setItem(tablerow, 9, QtWidgets.QTableWidgetItem(str(row[9])))
+            self.tableWidget.setItem(tablerow, 10, QtWidgets.QTableWidgetItem(str(row[10])))
+            tablerow += 1
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
