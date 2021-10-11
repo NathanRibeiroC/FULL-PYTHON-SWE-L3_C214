@@ -27,5 +27,10 @@ def test_getListByPublisherAct(set_csv_df):
     ls = ServiceGame.getListByPublisher(l,'Activision')
     assert len(ls) == 14
 
+def test_getListByPublisherAndPlatform(set_csv_df):
+    l = set_csv_df
+    ls = ServiceGame.getListByPlatformAndPublisher(l,'Nintendo','Wii')
+    assert (ls[0][5] == 'Nintendo') and (ls[0][2] == 'Wii')
+
 
 
