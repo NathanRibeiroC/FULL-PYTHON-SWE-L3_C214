@@ -1,5 +1,6 @@
 from src.view.interface import *
 
+
 # Calls ui
 if __name__ == "__main__":
     import sys
@@ -9,3 +10,5 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
+
