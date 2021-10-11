@@ -3,8 +3,10 @@ __pycache__/
 .pytest_cache
 .vscode
 lista.ui
+.idea
 *.py[cod]
 *$py.class
+src/resources/csv_searched_games.csv
 
 # C extensions
 *.so
