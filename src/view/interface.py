@@ -11,6 +11,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from src.service.ServiceGame import *
 from src.utils.csvUtils import *
 
+'''
+    Class that defines main window of ui
+'''
+
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -124,7 +129,7 @@ class Ui_MainWindow(object):
         self.pushButton.clicked.connect(self.getListByComboSelect)
 
         # parsed list from CSV file
-        self.parsedL = CsvOperations().csvConvert()
+        self.parsedL = CsvOperations().csv_convert()
 
     def getComboBoxText(self):
         comboPublisher = str(self.comboBox.currentText())
@@ -135,11 +140,11 @@ class Ui_MainWindow(object):
         aux = []
         Platform, Publisher = self.getComboBoxText()
         if(Platform == 'None')and(Publisher!='None'):
-            aux = ServiceGame.getListByPublisher(self.parsedL, Publisher)
+            aux = ServiceGame.get_list_by_publisher(self.parsedL, Publisher)
         elif(Platform != 'None')and(Publisher=='None'):
-            aux = ServiceGame.getListByPlatform(self.parsedL, Platform)
+            aux = ServiceGame.get_list_by_platform(self.parsedL, Platform)
         elif(Platform != 'None')and(Publisher!='None'):
-            aux = ServiceGame.getListByPlatformAndPublisher(self.parsedL,Publisher,Platform)
+            aux = ServiceGame.get_list_by_platform_and_publisher(self.parsedL,Publisher,Platform)
         else:
             aux = []
         self.showListOnTable(aux)
@@ -169,13 +174,3 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Select Platform"))
         self.pushButton.setText(_translate("MainWindow", "Search"))
 
-'''
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
-'''
