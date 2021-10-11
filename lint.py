@@ -1,13 +1,20 @@
+#lint.py
+
 import sys
+
 from pylint import lint
 
 THRESHOLD = 9
 
-if len(sys.argv) < 2:
-    raise ArgumentError("Module to evaluate needs to be the first argument")
+run = lint.Run(["factorial.py"], do_exit=False)
 
-run = lint.Run([sys.argv[1:]], do_exit=False)
-score = run.linter.stats['global_note'] # Yes this is a terrible name for the score
+score = run.linter.stats["global_note"]
 
 if score < THRESHOLD:
+
+    print("Linter failed: Score < threshold value")
+
     sys.exit(1)
+
+
+sys.exit(0)
