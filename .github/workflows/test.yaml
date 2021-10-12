@@ -19,8 +19,9 @@ jobs:
       - name: Install dependencies
         run: |
           conda update pip
-          conda install pytest
-          if [ -f requirements.txt ]; then conda install --file requirements.txt; fi
+          conda create --name myenv
+          conda env create -f environment_ntn.yml
+          conda activate environment_ntn
       - name: Test with pytest
         run: |
           pytest
