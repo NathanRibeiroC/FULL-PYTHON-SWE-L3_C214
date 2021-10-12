@@ -18,9 +18,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install pytest
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          conda update pip
+          conda install pytest
+          if [ -f requirements.txt ]; then conda install --file requirements.txt; fi
       - name: Test with pytest
         run: |
           pytest
