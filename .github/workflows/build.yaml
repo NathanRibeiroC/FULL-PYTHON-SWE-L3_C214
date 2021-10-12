@@ -23,6 +23,7 @@ jobs:
       - name: Analysing the code with pylint
         run: |
            pip install pylint
+           pylint --fail-under=8
            find . -name '*.py' -exec pylint {} \;
       - name: Test with pytest
         run: |
