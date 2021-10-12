@@ -10,7 +10,7 @@ def test_fileCreated():
 
     aux = [['16', 'Kinect Adventures!', 'X360', '2010', 'Misc', 'Microsoft Game Studios', '14.97', '4.94', '0.24', '1.67', '21.82']]
     CsvOperations.create_file(aux)
-    FILE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))+'\\src\\resources\\csv_searched_games.csv'
+    FILE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))+'/src/resources/csv_searched_games.csv'
     my_file = Path(FILE_DIR)
     if my_file.is_file():
         assert True

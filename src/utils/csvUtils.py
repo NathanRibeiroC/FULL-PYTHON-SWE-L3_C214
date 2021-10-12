@@ -9,7 +9,7 @@ class CsvOperations:
     def __init__(self) -> None:
         """Csv initializator (sets default path for csv reference file)"""
         self.filepath = os.path.join(os.path.dirname(os.path.dirname(__file__)))\
-                        + '\\resources\\'    # parent do diretório atual + folder recources
+                        + '/resources/'    # parent do diretório atual + folder recources
 
     # convert csv data to list
     def csv_convert(self):
@@ -24,7 +24,7 @@ class CsvOperations:
     def create_file(aux):
         """Create csv file based on search"""
         file_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) \
-            + '\\src\\resources\\csv_searched_games.csv'  # path where file will be created
+            + '/src/resources/csv_searched_games.csv'  # path where file will be created
 
         # column names of csv file generated
         fields = ["rank", "name", "platform", "year", "genre", "publisher"
