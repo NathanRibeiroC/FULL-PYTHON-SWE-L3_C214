@@ -18,10 +18,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          conda update pip
-          conda create --name myenv
-          conda env create -f environment_ntn.yml
-          conda activate environment_ntn
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest
         run: |
           pytest
