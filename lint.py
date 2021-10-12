@@ -1,3 +1,4 @@
+"""This module configures pylint runner"""
 import argparse
 import logging
 from pylint.lint import Run
