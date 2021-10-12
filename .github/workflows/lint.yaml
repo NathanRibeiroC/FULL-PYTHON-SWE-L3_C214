@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Run Pylint
       run: |
-        python lint.py --path .github/workflows --threshold 7
+        python lint.py --path /home/runner/work/L3_C214/L3_C214/.github/workflows --threshold 7
