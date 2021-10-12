@@ -23,7 +23,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Analysing the code with pylint
         run: |
-           find . -name '*.py' -exec pylint {} \;
+          python lint.py --path ./test --threshold 8
+          python lint.py --path ./src --threshold 6
       - name: Test with pytest
         run: |
           pytest
