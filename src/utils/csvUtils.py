@@ -1,4 +1,4 @@
-"""Modules used"""
+"""This module provides a class to handle with csv files"""
 import os
 import csv
 import pandas as pd

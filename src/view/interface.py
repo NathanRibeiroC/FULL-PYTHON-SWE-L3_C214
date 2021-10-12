@@ -6,18 +6,15 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-
+"""interface.py represents ui's Main Window class"""
 from PyQt5 import QtCore, QtGui, QtWidgets
 from src.service.ServiceGame import *
 from src.utils.csvUtils import *
 
-'''
-    Class that defines main window of ui
-'''
-
-
 class Ui_MainWindow(object):
+    """Class that represents ui's Main Window"""
     def setupUi(self, MainWindow):
+        """Method that setups Main Window's elements"""
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(641, 395)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -26,7 +23,10 @@ class Ui_MainWindow(object):
         self.gridLayout.setObjectName("gridLayout")
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(40
+                                           , 20
+                                           ,QtWidgets.QSizePolicy.Expanding
+                                           , QtWidgets.QSizePolicy.Minimum)
         self.verticalLayout.addItem(spacerItem)
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setObjectName("tableWidget")
@@ -55,12 +55,18 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(10, item)
         self.verticalLayout.addWidget(self.tableWidget)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(40
+                                            , 20
+                                            , QtWidgets.QSizePolicy.Expanding
+                                            , QtWidgets.QSizePolicy.Minimum)
         self.verticalLayout.addItem(spacerItem1)
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
         self.verticalLayout_4.setObjectName("verticalLayout_4")
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem2 = QtWidgets.QSpacerItem(40
+                                            , 20
+                                            , QtWidgets.QSizePolicy.Expanding
+                                            , QtWidgets.QSizePolicy.Minimum)
         self.verticalLayout_4.addItem(spacerItem2)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -86,7 +92,10 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout_4.addWidget(self.pushButton)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem3 = QtWidgets.QSpacerItem(40
+                                            , 20
+                                            , QtWidgets.QSizePolicy.Expanding
+                                            , QtWidgets.QSizePolicy.Minimum)
         self.verticalLayout_4.addItem(spacerItem3)
         self.gridLayout.addLayout(self.verticalLayout_4, 1, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -102,7 +111,9 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
         # table widget configuration
-        self.tableWidget.setHorizontalHeaderLabels(["rank","name","platform","year","genre","publisher","na_sales","eu_sales","jp_sales","other_sales","global_sales"])
+        self.tableWidget.setHorizontalHeaderLabels(["rank","name","platform","year"
+                                                       ,"genre","publisher","na_sales","eu_sales"
+                                                       ,"jp_sales","other_sales","global_sales"])
 
         # combo box PUBLISHER configuration
         self.comboBox.addItem('None')
@@ -126,19 +137,21 @@ class Ui_MainWindow(object):
         self.comboBox_2.addItem('PS2')
 
         # configuring pushButton
-        self.pushButton.clicked.connect(self.getListByComboSelect)
+        self.pushButton.clicked.connect(self.get_list_by_combo_select)
 
         # parsed list from CSV file
         self.parsedL = CsvOperations().csv_convert()
 
-    def getComboBoxText(self):
+    def get_combo_box_text(self):
+        """Gets text from combo boxes"""
         comboPublisher = str(self.comboBox.currentText())
         comboPlatform = str(self.comboBox_2.currentText())
         return comboPlatform, comboPublisher
 
-    def getListByComboSelect(self):
+    def get_list_by_combo_select(self):
+        """Searches games based on combo boxes parameters"""
         aux = []
-        Platform, Publisher = self.getComboBoxText()
+        Platform, Publisher = self.get_combo_box_text()
         if(Platform == 'None')and(Publisher!='None'):
             aux = ServiceGame.get_list_by_publisher(self.parsedL, Publisher)
         elif(Platform != 'None')and(Publisher=='None'):
@@ -147,9 +160,10 @@ class Ui_MainWindow(object):
             aux = ServiceGame.get_list_by_platform_and_publisher(self.parsedL,Publisher,Platform)
         else:
             aux = []
-        self.showListOnTable(aux)
+        self.show_list_on_table(aux)
 
-    def showListOnTable(self,aux):
+    def show_list_on_table(self,aux):
+        """Shows games searched on table widget"""
         tablerow = 0
         self.tableWidget.setRowCount(len(aux))
         for row in aux:
@@ -168,9 +182,9 @@ class Ui_MainWindow(object):
 
 
     def retranslateUi(self, MainWindow):
+        """Defines Main Window element's texts"""
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "LISTA 3 C214"))
         self.label_2.setText(_translate("MainWindow", "Select Publisher"))
         self.label.setText(_translate("MainWindow", "Select Platform"))
         self.pushButton.setText(_translate("MainWindow", "Search"))
-

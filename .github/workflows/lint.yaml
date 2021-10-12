@@ -19,5 +19,5 @@ jobs:
         pip install pylint
     - name: Run Pylint
       run: |
-        python lint.py --path ./test --threshold 2
-        python lint.py --path ./src --threshold 2
+        python lint.py --path ./test --threshold 8
+        python lint.py --path ./src --threshold 6
