@@ -31,7 +31,8 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 
 ## Funcionamento
 
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="500" height="500" class = "center" />
+![Animação](https://user-images.githubusercontent.com/80288857/137222805-89ee24c0-9659-4ab1-a5a6-691969ba627b.gif)
+
 
 
 
