@@ -4,7 +4,7 @@
 
 ## Descrição 
 
-O intuito deste repositório é apresentar uma solução para a lista 3 de C214, utilizando conceitos de engenharia de Software, tal como build automatizada, integração contínua, testes automatizados, etc.
+O intuito deste repositório é apresentar uma solução para a lista 3 de C214 100% em Python, utilizando conceitos de engenharia de Software, tal como build automatizada, integração contínua, testes automatizados, etc.
 A seguir serão mostradas duas etapas, para configuração de um ambiente Python que seja capaz de rodar o projeto.
 
 ## Sugestão de como importar o ambiente virtual
