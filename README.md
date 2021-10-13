@@ -33,7 +33,10 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 
 ![Animação](https://user-images.githubusercontent.com/80288857/137222805-89ee24c0-9659-4ab1-a5a6-691969ba627b.gif)
 
-No GIF acima, foi mostrado o funcionamento do projeto, assim como sua interface gráfica. Via combo box, filtramos o conteúdo dos arquivos e assim que o botão é clicado, um arquivo csv com seu conteúdo é gerado.
+No GIF acima, foi mostrado o funcionamento do projeto, assim como sua interface gráfica. Via combo box, filtramos o conteúdo dos arquivos e assim que o botão é clicado, um arquivo csv com seu conteúdo é gerado. Na implementação feita, foi extendido um pouco ainda as funcionalidades da lista e pode-se filtrar também por plataforma e publisher, ou pode-se optar pelo formato padrão e filtrar só por plataforma ou só por publisher.
+Se caso uma busca já tiver sido efetuada e outra for efetuada em seguida, o arquivo .csv é substituído pelo conteúdo da busca mais recente, porém isto foi apenas conveniente para implementação e para não ficar ocupando a pasta resources com muitos arquivos.
+
+
 
 
 
