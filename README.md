@@ -21,6 +21,10 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 - Uma vez criado o ambiente, deve-se verificar como trabalhar com esse ambiente dentro da IDE utilizada, seguem alguns links que exemplificam isso: [:link:](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html), [:link:](https://stackoverflow.com/questions/43351596/activating-anaconda-environment-in-vscode), [:link:](https://docs.anaconda.com/anaconda/user-guide/tasks/integration/sublime/)
 - Após seguir esse passo a passo, já é possível rodar o projeto em um ambiente adequado na IDE que for preferida.
 
+## Associação do ambiente virtual à IDE
+
+Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada uma tem uma maneira de fazer a associação do ambiente virtual e a seleção do interpretador Python. Listarei aqui como fazer esse processo nas 3 principais IDEs utilizadas. Porém recomendo fortemente o uso do Pycharm, principalmente pelo fato de que ele fará a associação das variáveis ao sistema de forma automática, eliminando assim, problemas referente ao uso de imports relativos entre os módulos da solução.
+
 
 
 
