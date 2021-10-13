@@ -33,6 +33,8 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 
 ![Animação](https://user-images.githubusercontent.com/80288857/137222805-89ee24c0-9659-4ab1-a5a6-691969ba627b.gif)
 
+No GIF acima, foi mostrado o funcionamento do projeto, assim como sua interface gráfica. Via combo box, filtramos o conteúdo dos arquivos e assim que o botão é clicado, um arquivo csv com seu conteúdo é gerado.
+
 
 
 
