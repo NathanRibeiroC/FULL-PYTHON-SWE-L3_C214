@@ -35,7 +35,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <p align="center">
   <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563781-66177e59-b3d1-4493-865c-9d7e5cb37b75.png">
   </p>
-  4. É muito importante instalar o Anaconda em ProgramData ou qualquer diretório que não tenha espaço, uma vez que esse fato pode ocasionar em problemas, ao tentar associar o interpretador do python presente no ambiente virtual Anaconda à alguma IDE, porém o caminho mais utilizado para instalação é a pasta ProgramData.
+  4. É muito importante instalar o Anaconda em ProgramData ou qualquer diretório que não tenha espaço, caso contrário pode ocasionar em problemas, ao tentar associar o interpretador do python presente no ambiente virtual Anaconda à alguma IDE, porém o caminho mais utilizado para instalação é a pasta ProgramData.
   <p align="center">
   <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563978-8a973682-bedd-49d7-a5df-49f3c8e472e1.png">
   </p>
