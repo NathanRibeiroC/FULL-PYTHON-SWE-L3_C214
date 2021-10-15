@@ -25,31 +25,31 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   ## Siga esses passos para instalar corretamente
   1. Ao executar o .exe baixado esta tela de instalação aparecerá a priori, pode clicar em "Next".
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563463-b7b0c16a-0f95-410b-ba77-5fbd2ffdd5c7.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563463-b7b0c16a-0f95-410b-ba77-5fbd2ffdd5c7.png">
   </p>
   2. Pode concordar com os termos e clicar em "I agree"
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563617-58f08695-f702-4930-a57a-ff3e2828cfc5.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563617-58f08695-f702-4930-a57a-ff3e2828cfc5.png">
   </p>
   3. É interessante clicar em "Just Me"
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563781-66177e59-b3d1-4493-865c-9d7e5cb37b75.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563781-66177e59-b3d1-4493-865c-9d7e5cb37b75.png">
   </p>
   4. É muito importante instalar o Anaconda em ProgramData ou qualquer diretório que não tenha espaço, uma vez que esse fato pode ocasionar em problemas, ao tentar associar o interpretador do python presente no ambiente virtual Anaconda à alguma IDE, porém o caminho mais utilizado para instalação é a pasta ProgramData.
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563978-8a973682-bedd-49d7-a5df-49f3c8e472e1.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137563978-8a973682-bedd-49d7-a5df-49f3c8e472e1.png">
   </p>
   5. É muito interessante selecionar as duas opções, primeiro pelo fato de que adicionar o Anaconda às variáveis de sistema do Windows, vai permitir usar o CONDA direto do terminal da IDE e do cmd Windows. E segundo pelo fato de configurar o interpretador do Anaconda como padrão pode facilitar na configuração do interpretador em algumas IDEs, não é o caso do Pycharm que é a IDE sugerida e que em breve será abordado como fazer a configuração do interpretador nele.
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564214-fc854c0c-e5ef-48bb-aeb6-bb52b3c5351b.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137564214-fc854c0c-e5ef-48bb-aeb6-bb52b3c5351b.png">
   </p>
   6. Espere terminar a instalação, cique em "Next". 
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564757-2609ef04-9a3c-4b79-a70e-8c084c4d2441.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137564757-2609ef04-9a3c-4b79-a70e-8c084c4d2441.png">
   </p>
   7. Clique em "Finish".
   <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564847-523096a1-9980-45d9-bdef-e5e71599740d.png">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137564847-523096a1-9980-45d9-bdef-e5e71599740d.png">
   </p>
 </details>
 
