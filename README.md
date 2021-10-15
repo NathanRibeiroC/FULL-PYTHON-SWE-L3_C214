@@ -20,7 +20,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 - [Dowload do Anaconda](https://www.anaconda.com/products/individual)
 
 <details>
-  <summary> Expanda para mais detalhes da instalação </summary>
+  <summary> Expanda para mais detalhes da instalação do arquivo .exe </summary>
   
   ## Siga esses passos para instalar corretamente
   1. Ao executar o .exe baixado esta tela de instalação aparecerá a priori, pode clicar em "Next".
