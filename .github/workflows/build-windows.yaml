@@ -10,12 +10,12 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    # Creating and configuring conda environment on windows based on .yml file
+  # Creating and configuring conda environment on windows based on .yml file
     - name: Install dependencies
       run: |
         C:\Miniconda\condabin\conda.bat env update --file environment.yml --name base
         C:\Miniconda\condabin\conda.bat init powershell
-    # Installing and running lint based on lint.py runnable file
+  # Installing and running lint based on lint.py runnable file
     - name: Lint with pylint
       run: |
         # Activate the base environment
@@ -23,7 +23,7 @@ jobs:
         C:\Miniconda\condabin\conda.bat install pylint
         python lint.py --path ./test --threshold 8
         python lint.py --path ./src --threshold 6
-   # Installing and running pytest
+  # Installing and running pytest
     - name: Test with pytest
       run: |
         # Activate the base environment
