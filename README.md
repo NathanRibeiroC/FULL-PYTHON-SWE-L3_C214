@@ -1,7 +1,7 @@
 # L3_C214 :snake:
 [![Build - Linux](https://github.com/NathanRibeiroC/L3_C214/actions/workflows/build-linux.yaml/badge.svg)](https://github.com/NathanRibeiroC/L3_C214/actions/workflows/build-linux.yaml)
 [![Build - Windows](https://github.com/NathanRibeiroC/L3_C214/actions/workflows/build-windows.yaml/badge.svg)](https://github.com/NathanRibeiroC/L3_C214/actions/workflows/build-windows.yaml)
-[![Python 3V's](https://img.shields.io/badge/python-3.7-->3.8-->3.9-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 3V's](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
 ## Descrição 
 
