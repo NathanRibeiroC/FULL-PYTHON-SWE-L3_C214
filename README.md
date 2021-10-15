@@ -23,7 +23,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <summary> Expanda para mais detalhes da instalação </summary>
   
   ## Siga esses passos para instalar corretamente
-  1. Ao executar o .exe baixado esta tela de instalação aparecerá a priori, pode clicar em next.
+  1. Ao executar o .exe baixado esta tela de instalação aparecerá a priori, pode clicar em "Next".
   <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563463-b7b0c16a-0f95-410b-ba77-5fbd2ffdd5c7.png">
   </p>
@@ -39,9 +39,18 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137563978-8a973682-bedd-49d7-a5df-49f3c8e472e1.png">
   </p>
-
-
-  
+  5. É muito interessante selecionar as duas opções, primeiro pelo fato de que adicionar o Anaconda às variáveis de sistema do Windows, vai permitir usar o CONDA direto do terminal da IDE e do cmd Windows. E segundo pelo fato de configurar o interpretador do Anaconda como padrão pode facilitar na configuração do interpretador em algumas IDEs, não é o caso do Pycharm que é a IDE sugerida e que em breve será abordado como fazer a configuração do interpretador nele.
+  <p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564214-fc854c0c-e5ef-48bb-aeb6-bb52b3c5351b.png">
+  </p>
+  6. Espere terminar a instalação, cique em "Next". 
+  <p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564757-2609ef04-9a3c-4b79-a70e-8c084c4d2441.png">
+  </p>
+  7. Clique em "Finish".
+  <p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/80288857/137564847-523096a1-9980-45d9-bdef-e5e71599740d.png">
+  </p>
 </details>
 
 - Para criar o ambiente [abrir o anaconda prompt](https://stackoverflow.com/questions/47914980/how-to-access-anaconda-command-prompt-in-windows-10-64-bit/55545141#:~:text=Go%20with%20the%20mouse%20to,%22Anaconda%20Prompt%22%20will%20open.), digitar no terminal `pip install -r requirements.txt` ou se preferir usar a sintaxe conda `conda create --name <env_name> --file requirements.txt`
