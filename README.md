@@ -94,13 +94,13 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <img width="962" height="284" src="https://user-images.githubusercontent.com/80288857/137566227-e186bf9b-4211-406c-8fd8-ef3b6ba39fd1.png">
   </p>
 
-  3. 
+  3. O terminal mostrará as dependências instalando
 
   <p align="center">
   <img width="963" height="494" src="https://user-images.githubusercontent.com/80288857/137566263-b8d58969-7f59-49f1-b8bb-6cc10485d7a7.png">
   </p>
 
-  4.
+  4. E a ativação do ambiente
   
   <p align="center">
   <img width="960" height="464" src="https://user-images.githubusercontent.com/80288857/137566287-b100361d-b1e9-44e2-86c8-3e2b4e472e27.png">
