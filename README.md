@@ -65,9 +65,49 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137564847-523096a1-9980-45d9-bdef-e5e71599740d.png">
   </p>
   
+  8. Se quiser visualizar a pasta de instalação no diretório ProgramData, para ajudar a pegar o caminho do compilador nas etapas posteriores, que por padrão o Windows oculta, logo para visualizá-lo, dentro do disco local que você instalou, vá em exibir e selecione a checkbox Itens ocultos.
+  
+  <p align="center">
+  <img width="1335" height="461" src="https://user-images.githubusercontent.com/80288857/137565439-ea47219f-249d-4c28-bc85-ac5aaf605d0c.png">
+  </p>
+
 </details>
 
-- Para criar o ambiente [abrir o anaconda prompt](https://stackoverflow.com/questions/47914980/how-to-access-anaconda-command-prompt-in-windows-10-64-bit/55545141#:~:text=Go%20with%20the%20mouse%20to,%22Anaconda%20Prompt%22%20will%20open.), digitar no terminal `pip install -r requirements.txt` ou se preferir usar a sintaxe conda `conda create --name <env_name> --file requirements.txt`
+- Para verificar se a instalação ocorreu de forma correta, abra o prompt de comando do windows `WINDOWS+R` e digite `cmd`, digite `conda --version` o terminal deve exibir `conda <versão_atual>`.
+- Clone o repositório deste projeto, `git clone`, em algum caminho de sua preferência.
+- Agora criaremos o ambiente virtual a partir do arquivo `environment.yml`, logo abra o prompt de comando e navegue até o diretório raiz do repositório que foi clonado. E digite o seguinte comando: `conda env create -f environment.yml` 
+
+<details>
+  <summary> Expanda para mais detalhes da criação do ambiente virtual </summary>
+  
+  ## Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
+  
+  1. Navegação até o repositório clonado
+  
+  <p align="center">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137566178-f15b5a3f-7f30-46ab-a743-3143ef345f36.png">
+  </p>
+  
+  2. Criação a partir do arquivo .yml
+
+  <p align="center">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137566227-e186bf9b-4211-406c-8fd8-ef3b6ba39fd1.png">
+  </p>
+
+  3. 
+
+  <p align="center">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137566263-b8d58969-7f59-49f1-b8bb-6cc10485d7a7.png">
+  </p>
+
+  4.
+  
+  <p align="center">
+  <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137566287-b100361d-b1e9-44e2-86c8-3e2b4e472e27.png">
+  </p>
+
+</details>
+
 - É interessante verificar no [anaconda navigator](https://docs.anaconda.com/anaconda/navigator/getting-started/) se o ambiente foi criado da forma correta
 - Uma vez criado o ambiente, deve-se verificar como trabalhar com esse ambiente dentro da IDE utilizada, que será abordado melhor no próximo tópico
 - Após seguir esse passo a passo, já é possível rodar o projeto em um ambiente adequado na IDE que for preferida
