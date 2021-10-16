@@ -22,7 +22,8 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 <details>
   <summary> Expanda para mais detalhes da instalação do arquivo .exe </summary>
   
-  ## Siga esses passos para instalar corretamente
+  ### Siga esses passos para instalar corretamente
+  
   1. Ao executar o .exe baixado esta tela de instalação aparecerá a priori, pode clicar em "Next".
   
   <p align="center">
@@ -80,7 +81,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 <details>
   <summary> Expanda para mais detalhes da criação do ambiente virtual </summary>
   
-  ## Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
+  ### Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
   
   1. Navegação até o repositório clonado
   
@@ -113,7 +114,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 <details>
   <summary> Expanda para mais detalhes da criação do ambiente virtual </summary>
   
-  ## Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
+  ### Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
   
   Uma vez dentro do Navigator, vá em Environmets e veja se o ambiente my (nome do environment definido no arquivo environment.yml) foi criado, se você clicar nele, poderá ver as dependências que foram instaladas, bem como a versão do python. Você pode instalar outras dependências também, porém não recomendo. Uma coisa interessante de citar é que o Anaconda já elimina conflitos automaticamente todas as vezes que uma dependência é instalada, coisa que nem sempre é feita ao usar o pip.
   
@@ -133,7 +134,7 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 <details>
   <summary> Passo a passo da configuração do interpretador no Pycharm </summary>
   
-  ##
+  ###
   
   1. Abra a pasta do projeto no Pycharm. Por você ter aberto o projeto pela primeira vez, o Pycharm identificará o arquivo .yml e te sugerirá que um novo ambiente virtual pode ser criado a partir desse arquivo e o interpretador deste começar a ser usado no projeto. Daria certo também, porém a configuração anterior do ambiente, antes da associação com a IDE serve para qualquer IDE.
   
