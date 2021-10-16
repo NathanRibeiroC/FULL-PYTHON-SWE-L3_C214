@@ -178,13 +178,13 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
   <img width="973" height="700" src="https://user-images.githubusercontent.com/80288857/137567053-83494582-1162-4e87-be64-63e95a5c087e.png">
   </p>  
 
-  8. Vá em src --> main.py.
+  8. Vá em src --> main.py. Clique com o direito na tela do arquivo main.py e clique em Run 'main'.
   
   <p align="center">
   <img width="1320" height="720" src="https://user-images.githubusercontent.com/80288857/137567055-496ad2b9-716c-4a48-b207-d595b697eaf0.png">
   </p> 
   
-  9. Clique com o direito na tela do arquivo main.py e clique em Run 'main'.
+  9. O projeto já estará funcionando.
   
   <p align="center">
   <img width="1314" height="716" src="https://user-images.githubusercontent.com/80288857/137567057-5b1c89ee-56b6-4cd7-81ef-ece2afcf3b64.png">
