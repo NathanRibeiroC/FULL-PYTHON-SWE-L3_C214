@@ -65,7 +65,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
   <img width="491" height="382" src="https://user-images.githubusercontent.com/80288857/137564847-523096a1-9980-45d9-bdef-e5e71599740d.png">
   </p>
   
-  8. Se quiser visualizar a pasta de instalação no diretório ProgramData, para ajudar a pegar o caminho do compilador nas etapas posteriores, que por padrão o Windows oculta, logo para visualizá-lo, dentro do disco local que você instalou, vá em exibir e selecione a checkbox Itens ocultos.
+  8. Se quiser visualizar a pasta de instalação no diretório ProgramData, para ajudar a pegar o caminho do interpretador nas etapas posteriores, que por padrão o Windows oculta, logo para visualizá-lo, dentro do disco local que você instalou, vá em exibir e selecione a checkbox Itens ocultos.
   
   <p align="center">
   <img width="1335" height="461" src="https://user-images.githubusercontent.com/80288857/137565439-ea47219f-249d-4c28-bc85-ac5aaf605d0c.png">
@@ -133,47 +133,56 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 <details>
   <summary> Passo a passo da configuração do interpretador no Pycharm </summary>
   
-  1.
-  <p align="center">
-  <img width="1300" height="700" src="https://user-images.githubusercontent.com/80288857/137567037-3aa5843a-6f3a-483d-9a93-597a6054373d.png">
-  </p>
+  1. Abra a pasta do projeto no Pycharm. Por você ter aberto o projeto pela primeira vez, o Pycharm identificará o arquivo .yml e te sugerirá que um novo ambiente virtual pode ser criado a partir desse arquivo e o interpretador deste começar a ser usado no projeto. Daria certo também, porém a configuração anterior do ambiente, antes da associação com a IDE serve para qualquer IDE.
   
-  2.
   <p align="center">
   <img width="600" height="170" src="https://user-images.githubusercontent.com/80288857/137567040-b707a759-a187-4619-9920-5949c31f7ae3.png">
   </p>
+  
+  2. Uma vez que você abriu a pasta do projeto do Pycharm. Vá em File --> Settings.
+  
+  <p align="center">
+  <img width="1300" height="700" src="https://user-images.githubusercontent.com/80288857/137567037-3aa5843a-6f3a-483d-9a93-597a6054373d.png">
+  </p>
 
-  3.
+  3. Vá em Project --> Add
+  
   <p align="center">
   <img width="980" height="720" src="https://user-images.githubusercontent.com/80288857/137567043-0efa329a-c34f-4628-a2f9-ee2e6790ba91.png">
   </p>  
   
-  4.
+  4. Vá em System Interpreter --> clique nos ...
+  
   <p align="center">
   <img width="825" height="570" src="https://user-images.githubusercontent.com/80288857/137567045-b9741bee-9267-4864-a280-21185d71ddd0.png">
   </p>    
 
-  5.
+  5. Clique no ícone de exibir arquivos ocultos, para o Pycharm mostrar o ProgramData.
+  
   <p align="center">
   <img width="420" height="480" src="https://user-images.githubusercontent.com/80288857/137567048-7e20ba58-13f9-4179-a0f1-8f5ab4627042.png">
   </p>      
 
-  6.
+  6. Navegue até o ambiente virtual "my", criado a partir do environment.yml,  faça o seguinte caminho: ProgramData --> anaconda --> envs --> my --> python.exe. Clique em Ok.
+  
   <p align="center">
   <img width="430" height="490" src="https://user-images.githubusercontent.com/80288857/137567050-f8abd289-a0dc-4cef-9e2a-50d7df9c37f3.png">
   </p>  
 
-  7.
+  7. Já será possível visualizar o interpretador configurado de acordo com o ambiente virtual criado anteriormente.
+  
   <p align="center">
   <img width="973" height="700" src="https://user-images.githubusercontent.com/80288857/137567053-83494582-1162-4e87-be64-63e95a5c087e.png">
   </p>  
 
-  8.
+  8. Vá em src --> main.py.
+  
   <p align="center">
   <img width="1320" height="720" src="https://user-images.githubusercontent.com/80288857/137567055-496ad2b9-716c-4a48-b207-d595b697eaf0.png">
   </p> 
   
-  9.
+  9. Clique com o direito na tela do arquivo main.py e clique em Run 'main'.
+  
   <p align="center">
   <img width="1314" height="716" src="https://user-images.githubusercontent.com/80288857/137567057-5b1c89ee-56b6-4cd7-81ef-ece2afcf3b64.png">
   </p>  
