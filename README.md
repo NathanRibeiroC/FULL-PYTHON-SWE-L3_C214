@@ -111,20 +111,75 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 - É interessante verificar no anaconda navigator se o ambiente foi criado da forma correta. Digite `anaconda-navigator` no prompt de comando para abrir o navigator, ele já vem instalado com o anaconda.
 
 <details>
-    <summary> Veja detalhes de como navegar no anaconda navigator </summary>
-
-    <p align="center">
-    <img width="963" height="494" src="https://user-images.githubusercontent.com/80288857/137566653-3c076660-9ccb-4f0d-9e23-0bba9f66b6cd.png">
-    </p>
+  <summary> Expanda para mais detalhes da criação do ambiente virtual </summary>
   
-</details> 
+  ## Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
+  
+  Uma vez dentro do Navigator, vá em Environmets e veja se o ambiente my (nome do environment definido no arquivo environment.yml) foi criado, se você clicar nele, poderá ver as dependências que foram instaladas, bem como a versão do python. Você pode instalar outras dependências também, porém não recomendo. Uma coisa interessante de citar é que o Anaconda já elimina conflitos automaticamente todas as vezes que uma dependência é instalada, coisa que nem sempre é feita ao usar o pip.
+  
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137566754-8dd83938-04b7-4a4b-b07a-0efc81d6111b.png">
+  </p>
+  
+</details>
+
 - Uma vez criado o ambiente, deve-se verificar como trabalhar com esse ambiente dentro da IDE utilizada, que será abordado melhor no próximo tópico
-- Após seguir esse passo a passo, já é possível rodar o projeto em um ambiente adequado na IDE que for preferida
 
 ## Associação do ambiente virtual à IDE
 
 Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada uma tem uma maneira de fazer a associação do ambiente virtual e a seleção do interpretador Python. Listarei aqui como fazer esse processo em 3 IDEs. Porém recomendo fortemente o uso do Pycharm, principalmente pelo fato de que ele fará a associação das variáveis ao sistema de forma automática, eliminando assim, problemas referente ao uso de imports relativos entre os módulos da solução.
 - Pycharm [:link:](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html), [:link:](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
+
+<details>
+  <summary> Passo a passo da configuração do interpretador no Pycharm </summary>
+  
+  1.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567037-3aa5843a-6f3a-483d-9a93-597a6054373d.png">
+  </p>
+  
+  2.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567040-b707a759-a187-4619-9920-5949c31f7ae3.png">
+  </p>
+
+  3.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567043-0efa329a-c34f-4628-a2f9-ee2e6790ba91.png">
+  </p>  
+  
+  4.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567045-b9741bee-9267-4864-a280-21185d71ddd0.png">
+  </p>    
+
+  5.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567048-7e20ba58-13f9-4179-a0f1-8f5ab4627042.png">
+  </p>      
+
+  6.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567050-f8abd289-a0dc-4cef-9e2a-50d7df9c37f3.png">
+  </p>  
+
+  7.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567053-83494582-1162-4e87-be64-63e95a5c087e.png">
+  </p>  
+
+  8.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567055-496ad2b9-716c-4a48-b207-d595b697eaf0.png">
+  </p> 
+  
+  9.
+  <p align="center">
+  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567057-5b1c89ee-56b6-4cd7-81ef-ece2afcf3b64.png">
+  </p>  
+  
+</details>
+
 - Visual Studio Code [:link:](https://medium.com/@joaolggross/como-configurar-o-vs-code-com-anaconda-e-jupyter-notebooks-b05258bf65c1), [:link:](https://code.visualstudio.com/docs/python/environments)
 - Sublime Text [:link:](https://docs.anaconda.com/anaconda/user-guide/tasks/integration/sublime/), [:link:](http://damnwidget.github.io/anaconda/anaconda_settings/)
 
