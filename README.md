@@ -108,7 +108,16 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 
 </details>
 
-- É interessante verificar no [anaconda navigator](https://docs.anaconda.com/anaconda/navigator/getting-started/) se o ambiente foi criado da forma correta
+- É interessante verificar no anaconda navigator se o ambiente foi criado da forma correta. Digite `anaconda-navigator` no prompt de comando para abrir o navigator, ele já vem instalado com o anaconda.
+
+<details>
+    <summary> Veja detalhes de como navegar no anaconda navigator </summary>
+
+    <p align="center">
+    <img width="963" height="494" src="https://user-images.githubusercontent.com/80288857/137566653-3c076660-9ccb-4f0d-9e23-0bba9f66b6cd.png">
+    </p>
+  
+</details> 
 - Uma vez criado o ambiente, deve-se verificar como trabalhar com esse ambiente dentro da IDE utilizada, que será abordado melhor no próximo tópico
 - Após seguir esse passo a passo, já é possível rodar o projeto em um ambiente adequado na IDE que for preferida
 
