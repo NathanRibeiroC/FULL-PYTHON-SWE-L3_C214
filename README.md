@@ -133,6 +133,8 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
 <details>
   <summary> Passo a passo da configuração do interpretador no Pycharm </summary>
   
+  ##
+  
   1. Abra a pasta do projeto no Pycharm. Por você ter aberto o projeto pela primeira vez, o Pycharm identificará o arquivo .yml e te sugerirá que um novo ambiente virtual pode ser criado a partir desse arquivo e o interpretador deste começar a ser usado no projeto. Daria certo também, porém a configuração anterior do ambiente, antes da associação com a IDE serve para qualquer IDE.
   
   <p align="center">
