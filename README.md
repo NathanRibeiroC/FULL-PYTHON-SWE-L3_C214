@@ -135,47 +135,47 @@ Existem várias IDEs utilizadas para desenvolvimento em linguagem python, e cada
   
   1.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567037-3aa5843a-6f3a-483d-9a93-597a6054373d.png">
+  <img width="1300" height="700" src="https://user-images.githubusercontent.com/80288857/137567037-3aa5843a-6f3a-483d-9a93-597a6054373d.png">
   </p>
   
   2.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567040-b707a759-a187-4619-9920-5949c31f7ae3.png">
+  <img width="600" height="170" src="https://user-images.githubusercontent.com/80288857/137567040-b707a759-a187-4619-9920-5949c31f7ae3.png">
   </p>
 
   3.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567043-0efa329a-c34f-4628-a2f9-ee2e6790ba91.png">
+  <img width="980" height="720" src="https://user-images.githubusercontent.com/80288857/137567043-0efa329a-c34f-4628-a2f9-ee2e6790ba91.png">
   </p>  
   
   4.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567045-b9741bee-9267-4864-a280-21185d71ddd0.png">
+  <img width="825" height="570" src="https://user-images.githubusercontent.com/80288857/137567045-b9741bee-9267-4864-a280-21185d71ddd0.png">
   </p>    
 
   5.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567048-7e20ba58-13f9-4179-a0f1-8f5ab4627042.png">
+  <img width="420" height="480" src="https://user-images.githubusercontent.com/80288857/137567048-7e20ba58-13f9-4179-a0f1-8f5ab4627042.png">
   </p>      
 
   6.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567050-f8abd289-a0dc-4cef-9e2a-50d7df9c37f3.png">
+  <img width="430" height="490" src="https://user-images.githubusercontent.com/80288857/137567050-f8abd289-a0dc-4cef-9e2a-50d7df9c37f3.png">
   </p>  
 
   7.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567053-83494582-1162-4e87-be64-63e95a5c087e.png">
+  <img width="973" height="700" src="https://user-images.githubusercontent.com/80288857/137567053-83494582-1162-4e87-be64-63e95a5c087e.png">
   </p>  
 
   8.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567055-496ad2b9-716c-4a48-b207-d595b697eaf0.png">
+  <img width="1320" height="720" src="https://user-images.githubusercontent.com/80288857/137567055-496ad2b9-716c-4a48-b207-d595b697eaf0.png">
   </p> 
   
   9.
   <p align="center">
-  <img width="963" height="502" src="https://user-images.githubusercontent.com/80288857/137567057-5b1c89ee-56b6-4cd7-81ef-ece2afcf3b64.png">
+  <img width="1314" height="716" src="https://user-images.githubusercontent.com/80288857/137567057-5b1c89ee-56b6-4cd7-81ef-ece2afcf3b64.png">
   </p>  
   
 </details>
