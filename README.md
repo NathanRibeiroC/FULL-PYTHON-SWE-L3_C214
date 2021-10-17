@@ -13,7 +13,7 @@ A seguir serão mostradas duas etapas, para configuração de um ambiente Python
 É altamente recomendável ao trabalhar com projetos python, utilizar de [ambientes virtuais](https://csguide.cs.princeton.edu/software/virtualenv), os ambientes virtuais Python ajudam a desacoplar e isolar versões do Python e pacotes pip associados. Isso permite que os usuários finais instalem e gerenciem seu próprio conjunto de pacotes que são independentes daqueles fornecidos pelo sistema. Os ambientes virtuais permitem que você tenha um ambiente estável, reproduzível e portátil. Você controla quais versões de pacotes são instaladas e quando são atualizadas.
 Existem várias maneiras de se configurar um ambiente virtual em python, vou listar aqui alguns bons links que podem ajudar nessa configuração: [:link:](https://docs.python.org/3/library/venv.html), [:link:](https://realpython.com/lessons/creating-virtual-environment/), [:link:](https://towardsdatascience.com/virtual-environments-for-absolute-beginners-what-is-it-and-how-to-create-one-examples-a48da8982d4b), [:link:](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-Uma vez escolhido o método para criação do ambiente virtual, é só verificar uma maneira de criar o ambiente segundo o arquivo  `environment.yml`. Também deixarei listado aqui algumas boas maneiras de se fazer isso: [:link:](https://developer.akamai.com/blog/2017/06/21/how-building-virtual-python-environment), [:link:](https://gist.github.com/luiscape/19d2d73a8c7b59411a2fb73a697f5ed4), [:link:](https://www.jetbrains.com/help/pycharm/managing-dependencies.html), [:link:](https://www.codegrepper.com/code-examples/python/conda+create+requirements.txt).
+Uma vez escolhido o método para criação do ambiente virtual, é só verificar uma maneira de criar o ambiente segundo o arquivo  `environment.yml`. Também deixarei listado aqui algumas boas maneiras de se fazer isso: [:link:](https://shandou.medium.com/export-and-create-conda-environment-with-yml-5de619fe5a2), [:link:](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307), [:link:](https://repo2docker.readthedocs.io/en/latest/howto/export_environment.html), [:link:](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/04-sharing-environments/index.html).
 
 Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en/latest/index.html) para realização da gerência de dependências e de ambientes virtualizados, de forma mais simples. E seguir as seguintes etapas:
 
@@ -112,7 +112,7 @@ Minha recomendação é utilizar o [Anaconda](https://conda.io/projects/conda/en
 - É interessante verificar no anaconda navigator se o ambiente foi criado da forma correta. Digite `anaconda-navigator` no prompt de comando para abrir o navigator, ele já vem instalado com o anaconda.
 
 <details>
-  <summary> Expanda para mais detalhes da criação do ambiente virtual </summary>
+  <summary> Expanda para mais detalhes da verificação no anaconda navigator </summary>
   
   ### Verifique se as etapas realizadas acima para configuração do ambiente virtual resultaram nas seguintes respostas do terminal ou parecido
   
